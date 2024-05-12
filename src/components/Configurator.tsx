@@ -57,7 +57,7 @@ export const Configurator = () => {
 			<div>
 				<div className="font-bold uppercase">Chair Color</div>
 
-				<div className="flex gap-4 mt-6 items-center flex-wrap">
+				<div className="grid grid-cols-[repeat(auto-fit,minmax(32px,auto))] gap-4 mt-6 items-center flex-wrap">
 					{chairColors.map((color) => (
 						<div className={'grid gap-2'}>
 							<div
@@ -79,12 +79,12 @@ export const Configurator = () => {
 			<div>
 				<div className="font-bold uppercase">Cushion Color</div>
 
-				<div className="flex gap-4 mt-6 items-center flex-wrap">
+				<div className="grid grid-cols-[repeat(auto-fit,minmax(32px,auto))] gap-4 mt-6 items-center flex-wrap">
 					{cushionColors.map((color) => (
 						<div className={'grid gap-2'}>
 							<div
 								key={color.name}
-								className={cn('w-6 h-6 rounded-md cursor-pointer', {
+								className={cn('w-8 h-8 rounded-md cursor-pointer', {
 									'ring-2 ring-white': color.color === cushionColor,
 								})}
 								style={{
