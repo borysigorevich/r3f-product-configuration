@@ -1,7 +1,7 @@
 import { Canvas } from '@react-three/fiber';
 import React from 'react';
-import { Configurator } from './component/Configurator.tsx';
-import { Experience } from './component/Experience.tsx';
+import { Configurator } from './components/Configurator.tsx';
+import { Experience } from './components/Experience.tsx';
 import { CustomizationContextProvider } from './context/CustomizationContextProvider.tsx';
 
 function App() {
